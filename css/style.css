@@ -1,0 +1,59 @@
+.square {
+width: 50px;
+height: 50px;
+background-color: red;
+position: absolute;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-fill-mode: forwards;
+animation-name: square;
+width: 100px;
+height: 100px;
+}
+
+.square:nth-child(1){
+animation-delay: 0s;
+}
+    
+
+.square:nth-child(2){
+animation-delay: 1s;
+}
+
+.square:nth-child(3){
+animation-delay: 2s;
+}
+
+.square:nth-child(4){
+animation-delay: 3s;
+}
+    
+    
+
+@keyframes square{
+from{
+top: 0;
+left: 0;
+background-color:blue
+}
+25%{
+border-radius: 50%;
+top: 0;
+left: calc(97vw - 50px);
+}
+
+50%{
+left:calc(97vw - 50px);
+top: calc(94vw - 50px) ;
+}
+75%{
+left:0;
+top: calc(94vw - 50px) ;
+border-radius: 50%;
+}
+100%{
+top: 0;
+left: 0;
+}
+}
+
